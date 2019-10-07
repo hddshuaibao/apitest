@@ -1,0 +1,164 @@
+[
+
+
+
+  {
+    "description": "这是我们的第一个mock例子",
+    "request": {
+      "uri": "/demo"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "第一个moco框架demo"
+
+    }
+
+
+  },
+  {
+    "description": "this is a get request!",
+    "request": {
+      "uri": "/getwithparameter",
+      "method": "get",
+      "queries": {
+        "name": "hudandan",
+        "sex": "female",
+        "age": "20"
+      }
+    },
+    "response": {
+      "text": "hudandan loves test!"
+    }
+  },
+
+  {
+    "description": "this is a post request with param",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "hudandan",
+        "sex": "female"
+
+      }
+
+    },
+    "response": {
+      "text": "hudandan's post request with param"
+
+    }
+
+  },
+
+  {
+    "description": "这是一个携带cookie的方法",
+    "request": {
+      "uri": "/getcookies",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "cookies": {
+        "login": "true"
+      },
+      "text": "获得cookie已经成功"
+    }
+
+  },
+
+  {
+    "description": "必须带cookie信息才能访问的get请求",
+    "request": {
+      "uri": "/withcookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+      "response": {
+        "headers": {
+          "Content-Type": "text/html;charset=gbk"
+        },
+        "text": "带cookie信息访问成功！"
+      }
+
+  },
+
+  {
+    "description": "必须带cookie信息才能访问的post请求",
+    "request": {
+      "uri": "/postwithcookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "hudd",
+        "age": "32"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "hudd": "success",
+        "status": "1"
+      }
+    }
+  },
+
+  {
+    "description": "必须带header信息才能访问的post请求",
+    "request": {
+      "uri": "/postwithheader",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json;charset=utf-8"
+      },
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "胡丹旦",
+        "age": "32"
+      }
+    },
+    "response": {
+      "json": {
+        "hdd1": "成功了",
+        "status": "1"
+      }
+
+    }
+  },
+
+  {
+    "description": "重定向到自己的网页上",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "/redirect/new"
+  },
+
+  {
+    "description": "被重定向到的页面",
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "text": "重定向成功"
+    }
+  }
+
+
+
+
+
+
+
+
+
+]
