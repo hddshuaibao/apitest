@@ -8,6 +8,7 @@ public class TestConfig {
     public static String loginUrl;
     public static String versionSaveUrl;
     public static String versionListUrl;
+    public static String cost_type_configSaveUrl;
 
 
     public static DefaultHttpClient defaultHttpClient;

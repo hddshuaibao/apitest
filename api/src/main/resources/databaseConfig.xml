@@ -18,17 +18,30 @@
                 <property name="password" value="root"/>
             </dataSource>
         </environment>
-        <environment id="real">
+        <environment id="190">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <!-- 1.加载数据库驱动 -->
-                <property name="driver" value="${real.driverClass}"/>
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <!-- 2.数据库连接地址 -->
-                <property name="url" value="${real.jdbcUrl}"/>
+                <property name="url" value="jdbc:mysql://10.10.10.193:3306/weixinnew"/>
                 <!-- 数据库用户... -->
-                <property name="username" value="${real.username}"/>
+                <property name="username" value="root"/>
                 <!-- 数据库密码... -->
-                <property name="password" value="${real.password}}"/>
+                <property name="password" value="Space1234"/>
+            </dataSource>
+        </environment>
+        <environment id="auto">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!-- 1.加载数据库驱动 -->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <!-- 2.数据库连接地址 -->
+                <property name="url" value="jdbc:mysql://10.10.10.193:3306/auto"/>
+                <!-- 数据库用户... -->
+                <property name="username" value="root"/>
+                <!-- 数据库密码... -->
+                <property name="password" value="Space1234"/>
             </dataSource>
         </environment>
     </environments>
