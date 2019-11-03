@@ -40,18 +40,25 @@ public class GetParam {
     }
 
     public String getExpected() {
-        return expected;
+        return expect;
     }
 
     public void setExpected(String expected) {
-        this.expected = expected;
+        this.expect = expected;
     }
 
+    public String getApi() {
+        return api;
+    }
 
+    public void setApi(String api) {
+        this.api = api;
+    }
 
     private int apiid;
     private String apiparams;
     private String cases;
-    private String expected;
+    private String expect;
+    private String api;
 
 }

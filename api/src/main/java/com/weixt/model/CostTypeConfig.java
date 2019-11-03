@@ -1,8 +1,10 @@
 package com.weixt.model;
 
-public class cost_type_config {
+import java.math.BigInteger;
 
-    private int id;
+public class CostTypeConfig {
+
+    private BigInteger id;
     private int is_show;
     private String title;
     private int orderid;
@@ -12,11 +14,11 @@ public class cost_type_config {
     private int updatorid;
 
 
-    public int getId() {
+    public BigInteger getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(BigInteger id) {
         this.id = id;
     }
 
@@ -74,5 +76,27 @@ public class cost_type_config {
 
     public void setUpdatorid(int updatorid) {
         this.updatorid = updatorid;
+    }
+
+
+
+    @Override
+    public String toString(){
+        String isshow = "true";
+        String id = String.valueOf(getId());
+        if(is_show==1){
+
+        }else{
+            isshow = "false";
+        }
+
+        return (
+                "{\"costTypeid\":\""+id+"\","+
+                        "\"orderid\":"+orderid+","+
+                        "\"title\":\""+title+"\","+
+                        "\"isShow\":"+isshow+"}"
+
+
+                );
     }
 }

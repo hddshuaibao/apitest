@@ -30,7 +30,7 @@ public class LoginTest {
         TestConfig.versionListUrl = ConfigFile.getUrl(InterfaceName.VERSIONLIST);
         TestConfig.defaultHttpClient = new DefaultHttpClient();
         TestConfig.cost_type_configSaveUrl = ConfigFile.getUrl(InterfaceName.COSTTYPECONFIG);
-
+        TestConfig.cost_type_listCostTypeUrl = ConfigFile.getUrl(InterfaceName.COSTTYPELIST);
 
     }
 
@@ -57,7 +57,7 @@ public class LoginTest {
     private String getResult(LoginCase loginCase) throws IOException {
 
         //        表单方式
-        HttpPost post = new HttpPost("http://weixt.spacetech.com.cn:8090/weixt/api/user_user_login");
+        HttpPost post = new HttpPost(TestConfig.loginUrl);
         List<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>();
         pairList.add(new BasicNameValuePair("apiparams",loginCase.getApiparams() ));
         post.setEntity(new UrlEncodedFormEntity(pairList, "utf-8"));
