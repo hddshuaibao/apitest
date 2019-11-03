@@ -13,6 +13,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -40,7 +41,13 @@ public class LoginTest {
         System.out.println(TestConfig.loginUrl);
 
         String result = getResult(loginCase);
-        //Assert.assertEquals(loginCase.getExpected(),result);
+
+        JSONObject jsonResult = JSONObject.parseObject(result);
+        String data = jsonResult.getString("data");
+        JSONObject dataJson = JSONObject.parseObject(data);
+        TestConfig.token = dataJson.getString("token");
+        System.out.println(TestConfig.token);
+        Assert.assertNotNull(TestConfig.token);
 
     }
 
@@ -57,12 +64,8 @@ public class LoginTest {
         String result;
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        JSONObject jsonResult = JSONObject.parseObject(result);
-        String data = jsonResult.getString("data");
-        JSONObject dataJson = JSONObject.parseObject(data);
-        TestConfig.token = dataJson.getString("token");
         System.out.println(result);
-        System.out.println(TestConfig.token);
+
         return result;
 
     }
