@@ -23,6 +23,10 @@ public class ConfigFile {
 
             uri = bundle.getString("versionList.url");
 
+        }else if(name == InterfaceName.COSTTYPECONFIG){
+
+            uri = bundle.getString("costTypeConfigSave.url");
+
         }
 
         testUrl = address + uri;

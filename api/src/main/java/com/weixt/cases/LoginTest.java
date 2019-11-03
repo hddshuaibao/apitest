@@ -23,20 +23,21 @@ import java.util.List;
 
 public class LoginTest {
 
-    @BeforeTest(groups = "loginTrue")
+    @BeforeTest(groups = "loginTrue196")
     public void beforeTest(){
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
         TestConfig.versionSaveUrl = ConfigFile.getUrl(InterfaceName.VERSIONSAVE);
         TestConfig.versionListUrl = ConfigFile.getUrl(InterfaceName.VERSIONLIST);
         TestConfig.defaultHttpClient = new DefaultHttpClient();
+        TestConfig.cost_type_configSaveUrl = ConfigFile.getUrl(InterfaceName.COSTTYPECONFIG);
 
 
     }
 
-    @Test(groups = "loginTrue")
+    @Test(groups = "loginTrue196")
     public void loginTrue() throws IOException {
-        SqlSession sqlSession = DatabaseUtil.getTestSession();
-        LoginCase loginCase = sqlSession.selectOne("loginCase",1);
+        SqlSession sqlSession = DatabaseUtil.getAutoSession();
+        LoginCase loginCase = sqlSession.selectOne("loginCase",2);
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
 
@@ -56,7 +57,7 @@ public class LoginTest {
     private String getResult(LoginCase loginCase) throws IOException {
 
         //        表单方式
-        HttpPost post = new HttpPost(TestConfig.loginUrl);
+        HttpPost post = new HttpPost("http://weixt.spacetech.com.cn:8090/weixt/api/user_user_login");
         List<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>();
         pairList.add(new BasicNameValuePair("apiparams",loginCase.getApiparams() ));
         post.setEntity(new UrlEncodedFormEntity(pairList, "utf-8"));

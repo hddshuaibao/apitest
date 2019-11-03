@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<suite name = "中招">
-    <test name = "中招测试套件">
+<suite name = "测试套件">
+    <test name = "正确测试套件">
         <classes>
             <class name="com.weixt.cases.LoginTest">
                 <methods>
                     <include name="loginTrue"></include>
                 </methods>
             </class>
-            <class name="com.weixt.cases.VersionListTest">
+            <!-- <class name="com.weixt.cases.VersionListTest" enabled="false">
                 <methods>
                     <include name="versionList"></include>
+                </methods>
+            </class> -->
+            <class name="com.weixt.cases.cost_type_configSaveTest">
+                <methods>
+                    <include name="configSave"></include>
                 </methods>
             </class>
         </classes>

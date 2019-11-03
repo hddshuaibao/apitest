@@ -12,7 +12,7 @@ public class DatabaseUtil {
 
 
     private static SqlSessionFactory testFactory = null;
-    private static SqlSessionFactory realFactory = null;
+    private static SqlSessionFactory autoFactory = null;
 
     static{
         Reader reader = null;
@@ -27,8 +27,8 @@ public class DatabaseUtil {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        testFactory = new SqlSessionFactoryBuilder().build(reader);
-        realFactory = new SqlSessionFactoryBuilder().build(readerReal);
+        testFactory = new SqlSessionFactoryBuilder().build(reader,"190");
+        autoFactory = new SqlSessionFactoryBuilder().build(readerReal,"auto");
 
     }
 
@@ -41,9 +41,9 @@ public class DatabaseUtil {
 
     }
 
-    public  static  SqlSession getRealSession(){
+    public  static  SqlSession getAutoSession(){
 
-        SqlSession sqlSession = realFactory.openSession();
+        SqlSession sqlSession = autoFactory.openSession();
 
         return sqlSession;
 
