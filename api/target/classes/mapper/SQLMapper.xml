@@ -12,4 +12,9 @@
         select * from param
         where id=#{id}
     </select>
+
+    <select id="cost_type_configSaveCase" parameterType="Integer" resultType="com.weixt.model.GetParam">
+        select * from  param where id=#{id}
+
+    </select>
 </mapper>
