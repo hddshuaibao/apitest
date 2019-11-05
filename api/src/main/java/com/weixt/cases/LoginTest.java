@@ -29,7 +29,7 @@ public class LoginTest {
         TestConfig.versionSaveUrl = ConfigFile.getUrl(InterfaceName.VERSIONSAVE);
         TestConfig.versionListUrl = ConfigFile.getUrl(InterfaceName.VERSIONLIST);
         TestConfig.defaultHttpClient = new DefaultHttpClient();
-        TestConfig.cost_type_configSaveUrl = ConfigFile.getUrl(InterfaceName.COSTTYPECONFIG);
+        //TestConfig.cost_type_configSaveUrl = ConfigFile.getUrl(InterfaceName.COSTTYPECONFIG);
         TestConfig.cost_type_listCostTypeUrl = ConfigFile.getUrl(InterfaceName.COSTTYPELIST);
 
     }

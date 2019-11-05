@@ -9,8 +9,9 @@ public class ConfigFile {
 
     private static ResourceBundle bundle = ResourceBundle.getBundle("application", Locale.CHINA);
 
+    static String  address = bundle.getString("test.url");
     public static  String getUrl(InterfaceName name){
-        String address = bundle.getString("test.url");
+
         String uri="";
         String testUrl;
         if(name == InterfaceName.VERSIONSAVE){
@@ -43,7 +44,7 @@ public class ConfigFile {
 
 
     public static String getUrlNew(String api){
-        String address = bundle.getString("test.url");
+        //String address = bundle.getString("test.url");
         String testUrl="";
         if(!api.equals("")||api!=null){
             testUrl = address+"/api/pc/"+api;

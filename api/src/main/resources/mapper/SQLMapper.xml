@@ -23,12 +23,17 @@
 
     </select>
     <select id="cost_type_config" parameterType="Integer" resultType="com.weixt.model.CostTypeConfig">
-        select id,is_show,title,orderid from cost_type_config where campusid=#{campusid}
+        select id,is_show,title,orderid from cost_type_config where campusid=#{campusid} order by orderid
 
     </select>
 
     <select id="cost_day_record" parameterType="String" resultType="com.weixt.model.CostDayRecord">
         select id from cost_day_record where campusid = 196 and record_date=#{record_date}
+
+    </select>
+
+    <select id="cost_Init_Balance" parameterType="String" resultType="com.weixt.model.CostBalance">
+        select * from cost_campus_balance where campusid = 196 and create_time like #{create_time}
 
     </select>
 </mapper>
