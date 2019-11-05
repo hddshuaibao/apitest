@@ -40,4 +40,24 @@ public class ConfigFile {
 
 
     }
+
+
+    public static String getUrlNew(String api){
+        String address = bundle.getString("test.url");
+        String testUrl="";
+        if(!api.equals("")||api!=null){
+            testUrl = address+"/api/pc/"+api;
+            System.out.println("request address :"+testUrl);
+        }else {
+
+            System.out.println("request address 为空");
+
+        }
+
+        return testUrl;
+
+    }
+
+
+
 }
