@@ -12,12 +12,24 @@
                 <methods>
                     <include name="versionList"></include>
                 </methods>
-            </class> -->
+            </class>
             <class name="com.weixt.cases.cost_type_configSaveTest">
                 <methods>
                     <include name="configSave"></include>
                 </methods>
             </class>
+
+            <class name="com.weixt.cases.Cost_type_listCostTypeTest">
+                <methods>
+                    <include name="cost_type_listCostTypeTest"></include>
+                </methods>
+            </class>-->
+            <class name="com.weixt.cases.Cost_DayDetailSaveTest">
+                <methods>
+                    <include name="DayDetailSaveTest"></include>
+                </methods>
+            </class>
+
         </classes>
 
     </test>

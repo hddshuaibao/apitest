@@ -13,6 +13,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -29,7 +30,7 @@ public class LoginTest {
         TestConfig.versionListUrl = ConfigFile.getUrl(InterfaceName.VERSIONLIST);
         TestConfig.defaultHttpClient = new DefaultHttpClient();
         TestConfig.cost_type_configSaveUrl = ConfigFile.getUrl(InterfaceName.COSTTYPECONFIG);
-
+        TestConfig.cost_type_listCostTypeUrl = ConfigFile.getUrl(InterfaceName.COSTTYPELIST);
 
     }
 
@@ -41,7 +42,13 @@ public class LoginTest {
         System.out.println(TestConfig.loginUrl);
 
         String result = getResult(loginCase);
-        //Assert.assertEquals(loginCase.getExpected(),result);
+
+        JSONObject jsonResult = JSONObject.parseObject(result);
+        String data = jsonResult.getString("data");
+        JSONObject dataJson = JSONObject.parseObject(data);
+        TestConfig.token = dataJson.getString("token");
+        System.out.println(TestConfig.token);
+        Assert.assertNotNull(TestConfig.token);
 
     }
 
@@ -50,7 +57,7 @@ public class LoginTest {
     private String getResult(LoginCase loginCase) throws IOException {
 
         //        表单方式
-        HttpPost post = new HttpPost("http://weixt.spacetech.com.cn:8090/weixt/api/user_user_login");
+        HttpPost post = new HttpPost(TestConfig.loginUrl);
         List<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>();
         pairList.add(new BasicNameValuePair("apiparams",loginCase.getApiparams() ));
         post.setEntity(new UrlEncodedFormEntity(pairList, "utf-8"));
@@ -58,12 +65,8 @@ public class LoginTest {
         String result;
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        JSONObject jsonResult = JSONObject.parseObject(result);
-        String data = jsonResult.getString("data");
-        JSONObject dataJson = JSONObject.parseObject(data);
-        TestConfig.token = dataJson.getString("token");
         System.out.println(result);
-        System.out.println(TestConfig.token);
+
         return result;
 
     }

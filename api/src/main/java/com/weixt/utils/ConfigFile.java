@@ -27,6 +27,12 @@ public class ConfigFile {
 
             uri = bundle.getString("costTypeConfigSave.url");
 
+        }else if(name == InterfaceName.COSTTYPELIST){
+            uri = bundle.getString("costTypeList.url");
+
+        }else if(name == InterfaceName.COSTDAYDETAILSAVE){
+            uri = bundle.getString("costDayRecord_save.url");
+
         }
 
         testUrl = address + uri;

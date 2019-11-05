@@ -24,7 +24,7 @@
                 <!-- 1.加载数据库驱动 -->
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <!-- 2.数据库连接地址 -->
-                <property name="url" value="jdbc:mysql://10.10.10.193:3306/weixinnew"/>
+                <property name="url" value="jdbc:mysql://weixt.spacetech.com.cn:3406/weixinnew"/>
                 <!-- 数据库用户... -->
                 <property name="username" value="root"/>
                 <!-- 数据库密码... -->
@@ -37,7 +37,7 @@
                 <!-- 1.加载数据库驱动 -->
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <!-- 2.数据库连接地址 -->
-                <property name="url" value="jdbc:mysql://10.10.10.193:3306/auto"/>
+                <property name="url" value="jdbc:mysql://weixt.spacetech.com.cn:3406/auto"/>
                 <!-- 数据库用户... -->
                 <property name="username" value="root"/>
                 <!-- 数据库密码... -->

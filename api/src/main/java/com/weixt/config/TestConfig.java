@@ -9,6 +9,8 @@ public class TestConfig {
     public static String versionSaveUrl;
     public static String versionListUrl;
     public static String cost_type_configSaveUrl;
+    public static String cost_type_listCostTypeUrl;
+    public static String cost_DayDetailSaveUrl;
 
 
     public static DefaultHttpClient defaultHttpClient;
