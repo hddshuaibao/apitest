@@ -16,6 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,10 +41,16 @@ public class Cost_type_listCostTypeTest {
         Assert.assertEquals(costTypeConfigList.size(),jsonArray.size());
         for (Object object:jsonArray){
             System.out.println("list内容："+object.toString());
+
         }
+
         for (int i = 0;i<costTypeConfigList.size();i++){
             Assert.assertEquals(costTypeConfigList.get(i).toString(),jsonArray.get(i).toString());
+
+
+
         }
+
 
 
     }

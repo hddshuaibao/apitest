@@ -8,28 +8,30 @@
                     <include name="loginTrue"></include>
                 </methods>
             </class>
-            <class name="com.weixt.cases.Cost_saveInitBalanceTest">
+            <!--<class name="com.weixt.cases.Cost_saveInitBalanceTest">
                 <methods>
                     <include name="saveInitBalanceTest"></include>
                 </methods>
-            </class>
+            </class>-->
             <!-- <class name="com.weixt.cases.VersionListTest" enabled="false">
                 <methods>
                     <include name="versionList"></include>
                 </methods>
-            </class>
+            </class> -->
             <class name="com.weixt.cases.cost_type_configSaveTest">
                 <methods>
-                    <include name="configSave"></include>
+                    <exclude name="configSave"></exclude>
+                    <include name="configUpdate"></include>
                 </methods>
             </class>
 
-            <class name="com.weixt.cases.Cost_type_listCostTypeTest">
+           <!-- <class name="com.weixt.cases.Cost_type_listCostTypeTest">
                 <methods>
-                    <include name="cost_type_listCostTypeTest"></include>
+                    <exclude name="cost_type_listCostTypeTest"></exclude>
+
                 </methods>
-            </class>
-            <class name="com.weixt.cases.Cost_DayDetailSaveTest">
+            </class>-->
+            <!--<class name="com.weixt.cases.Cost_DayDetailSaveTest">
                 <methods>
                     <include name="DayDetailSaveTest"></include>
                 </methods>

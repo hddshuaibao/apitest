@@ -41,8 +41,9 @@ public class cost_type_configSaveTest {
 
     }
 
-    @Test(dependsOnGroups = "loginTrue190",description = "修改配置信息")
+    @Test(dependsOnGroups = "loginTrue196",description = "修改配置信息")
     public void configUpdate() throws IOException {
+
 
         SqlSession sqlSession = DatabaseUtil.getAutoSession();
         SqlSession sqlSession1 = DatabaseUtil.getTestSession();
@@ -52,19 +53,31 @@ public class cost_type_configSaveTest {
         JSONObject jsonObject = JSONObject.parseObject(getParam.getApiparams());
         JSONObject jsonObject1 = JSONObject.parseObject(jsonObject.getString("params"));
         JSONArray jsonArray = JSONArray.parseArray(jsonObject1.getString("costTypeList"));
+        jsonArray.getJSONObject(0).put("costTypeid",costTypeConfigList.get(0).getId());
+        jsonArray.getJSONObject(1).put("costTypeid",costTypeConfigList.get(1).getId());
+        System.out.println(costTypeConfigList.get(0).getId() +"   "  +costTypeConfigList.get(1).getId());
 
-        String result = getUpdateResult(getParam);
+        String result = getUpdateResult(getParam,jsonObject.toString());
+        JSONObject jsonObject2 = JSONObject.parseObject("result");
+        JSONObject jsonObject3 = JSONObject.parseObject(jsonObject2.getString("ret"));
+        Assert.assertEquals(jsonObject3.getString("code"),200);
+
+//        for(int i = 0;i<jsonArray.size();i++){
+//            List<CostTypeConfig> costTypeConfigList1 =sqlSession1.selectList(getParam.getExpected(),196);
+//            Assert.assertEquals(costTypeConfigList1.get(i).toString(),jsonArray.get(i).toString());
+//
+//        }
 
 
 
 
     }
 
-    private String getUpdateResult(GetParam getParam) throws IOException {
+    private String getUpdateResult(GetParam getParam,String params) throws IOException {
 
         HttpPost post = new HttpPost(ConfigFile.getUrlNew(getParam.getApi()));
         List<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>();
-        pairList.add(new BasicNameValuePair("apiparams",getParam.getApiparams() ));
+        pairList.add(new BasicNameValuePair("apiparams",params ));
         post.setEntity(new UrlEncodedFormEntity(pairList, "utf-8"));
         post.setHeader("Content-type","application/x-www-form-urlencoded");
         post.setHeader("Cookie","JSSSID_COOKIE="+TestConfig.token);
