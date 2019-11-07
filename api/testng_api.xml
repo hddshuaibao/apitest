@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name = "测试套件">
+    <test name = "正确测试套件">
+        <classes>
+            <class name="com.weixt.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"></include>
+                </methods>
+            </class>
+            <!--<class name="com.weixt.cases.Cost_saveInitBalanceTest">
+                <methods>
+                    <include name="saveInitBalanceTest"></include>
+                </methods>
+            </class>-->
+            <!-- <class name="com.weixt.cases.VersionListTest" enabled="false">
+                <methods>
+                    <include name="versionList"></include>
+                </methods>
+            </class> -->
+            <class name="com.weixt.cases.cost_type_configSaveTest">
+                <methods>
+                    <exclude name="configSave"></exclude>
+                    <include name="configUpdate"></include>
+                </methods>
+            </class>
+
+           <!-- <class name="com.weixt.cases.Cost_type_listCostTypeTest">
+                <methods>
+                    <exclude name="cost_type_listCostTypeTest"></exclude>
+
+                </methods>
+            </class>-->
+            <!--<class name="com.weixt.cases.Cost_DayDetailSaveTest">
+                <methods>
+                    <include name="DayDetailSaveTest"></include>
+                </methods>
+            </class>-->
+
+
+
+        </classes>
+
+    </test>
+
+   <listeners>
+    <!--  <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>-->
+
+     <listener class-name="com.weixt.config.ExtentTestNGIReporterListener"/>
+ </listeners>
+
+</suite>
