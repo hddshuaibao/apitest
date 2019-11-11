@@ -48,4 +48,12 @@ public class DatabaseUtil {
         return sqlSession;
 
     }
+
+    public static void closeSession(SqlSession sqlSession){
+
+        sqlSession.close();
+
+    }
+
+
 }
