@@ -1,7 +1,10 @@
 package com.weixt.model;
 
+import lombok.Data;
+
 import java.math.BigInteger;
 
+@Data
 public class CostTypeConfig {
 
     private BigInteger id;

@@ -1,0 +1,926 @@
+2019-11-14 18:12:19,473 [main] DEBUG org.apache.ibatis.logging.LogFactory [LogFactory.java : 135] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-11-14 18:12:19,538 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,538 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,539 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,539 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,615 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,615 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,615 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,615 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:12:19,636 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:12:19,853 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1484673893.
+2019-11-14 18:12:19,853 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587e5365]
+2019-11-14 18:12:19,861 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from loginCase where id=? 
+2019-11-14 18:12:19,886 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==> Parameters: 2(Integer)
+2019-11-14 18:12:19,897 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==    Columns: id, username, password, apiparams, expect
+2019-11-14 18:12:19,897 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==        Row: 2, hbz, zaq1234, {"params":{"loginName":"hbz","password":"zaq1234"},"readonly":true}, null
+2019-11-14 18:12:19,899 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:12:20,081 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:12:20,088 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator [DefaultClientConnectionOperator.java : 174] - Connecting to weixt.spacetech.com.cn:8090
+2019-11-14 18:12:20,098 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:12:20,104 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:12:20,105 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:12:20,105 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:12:20,105 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:12:20,105 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:12:20,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /weixt/api/user_user_login HTTP/1.1[\r][\n]"
+2019-11-14 18:12:20,107 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:12:20,107 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 121[\r][\n]"
+2019-11-14 18:12:20,107 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:12:20,107 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:12:20,107 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 121
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:12:20,108 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:12:20,109 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A%7B%22loginName%22%3A%22hbz%22%2C%22password%22%3A%22zaq1234%22%7D%2C%22readonly%22%3Atrue%7D"
+2019-11-14 18:12:20,204 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:12:20 GMT[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: text/plain;charset=utf-8[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 1006[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:12:20,206 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:12:20,207 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:12:20,207 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:12:20,207 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:12:20,207 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:12:20 GMT
+2019-11-14 18:12:20,207 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: text/plain;charset=utf-8
+2019-11-14 18:12:20,207 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 1006
+2019-11-14 18:12:20,207 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:12:20,208 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:12:20,210 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:12:20,216 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"user_login","data":{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusList":[{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusid":196,"city":"330000330100","countydown":"","id":196,"period":"KINDERGARTEN","providerid":"","province":"330000","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","type":"SCHOOL","value":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]"}],"campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusSuperAdmin":false,"campusid":196,"idNumber":null,"isRegister":true,"loginName":"hbz","openid":"","orgcode":10008,"phone":"18658833711","portalUrl":"","providerList":[],"roles":"leader","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","token":"d709cc7d189c49fd9bb68b07ebd9c159","type":"SCHOOL","unionid":"","userIcon":"http://static.weixiaotong.com.cn/d0e8130f8e1567c3fbe12e285b79ce45a56eb88d.jpg","userName":"[0xe9][0xbb][0x84][0xe9][0x82][0xa6][0xe9][0x83][0x91]","userid":140608,"xxType":"1"},"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:12:20,216 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7bd7d6d6
+2019-11-14 18:12:20,216 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:12:20,306 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:12:20,318 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1204296383.
+2019-11-14 18:12:20,319 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@47c81abf]
+2019-11-14 18:12:20,320 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:12:20,320 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==> Parameters: 8(Integer)
+2019-11-14 18:12:20,322 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:12:20,322 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==        Row: 8, null, {"params": {"campusid": 196,"costTypeid": 191104143562215984,"index": 2},"readonly": true}, 更改排序, cost_type_config, oa_costTypeConfig_changeTypeOrder
+2019-11-14 18:12:20,323 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:12:20,323 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:12:20,333 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1020155847.
+2019-11-14 18:12:20,334 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3cce57c7]
+2019-11-14 18:12:20,335 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==>  Preparing: select id,is_show,title,orderid from cost_type_config where campusid=? order by update_time desc,orderid asc 
+2019-11-14 18:12:20,335 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==> Parameters: 196(Integer)
+2019-11-14 18:12:20,337 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid
+2019-11-14 18:12:20,337 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201741836534, -1, auto开启配置修改, 1
+2019-11-14 18:12:20,338 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201764242302, -1, auto未开启配置, 2
+2019-11-14 18:12:20,338 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201758279374, 1, auto未配置数据, 3
+2019-11-14 18:12:20,338 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201515786094, -1, auto开启配置修改, 1
+2019-11-14 18:12:20,339 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201523225363, -1, auto未开启配置, 2
+2019-11-14 18:12:20,339 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201561345599, 1, auto未配置数据, 3
+2019-11-14 18:12:20,339 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201395688935, -1, auto开启配置修改, 1
+2019-11-14 18:12:20,340 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201312380721, -1, auto未开启配置, 2
+2019-11-14 18:12:20,340 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201394560025, 1, auto未配置数据, 3
+2019-11-14 18:12:20,340 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200470204645, -1, auto开启配置修改, 1
+2019-11-14 18:12:20,340 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200454088586, -1, auto未开启配置, 2
+2019-11-14 18:12:20,341 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200425673621, 1, auto未配置数据, 3
+2019-11-14 18:12:20,341 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200231175219, -1, auto开启配置修改, 1
+2019-11-14 18:12:20,341 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200286301444, -1, auto未开启配置, 2
+2019-11-14 18:12:20,342 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200270793262, 1, auto未配置数据, 3
+2019-11-14 18:12:20,342 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194654610978, -1, auto开启配置修改, 1
+2019-11-14 18:12:20,343 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200099061249, 1, auto开启配置, 1
+2019-11-14 18:12:20,343 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200082329379, -1, auto未开启配置, 2
+2019-11-14 18:12:20,344 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200090721445, 1, auto未配置数据, 3
+2019-11-14 18:12:20,344 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195943541897, 1, auto开启配置, 1
+2019-11-14 18:12:20,344 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195977887165, -1, auto未开启配置, 2
+2019-11-14 18:12:20,344 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195975171857, 1, auto未配置数据, 3
+2019-11-14 18:12:20,344 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194656470726, -1, auto未开启配置, 2
+2019-11-14 18:12:20,345 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194691657691, 1, auto未配置数据, 3
+2019-11-14 18:12:20,345 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - <==      Total: 24
+2019-11-14 18:12:20,345 [main] INFO  c.w.c.f.Cost_changeTypeOrderTest [Cost_changeTypeOrderTest.java : 37] - 取到的typeid 为：191113201741836534
+2019-11-14 18:12:20,346 [main] INFO  c.w.c.f.Cost_changeTypeOrderTest [Cost_changeTypeOrderTest.java : 39] - 替换后的入参 {"params": {"campusid": 196,"costTypeid": 191113201741836534,"index": 2},"readonly": true}
+2019-11-14 18:16:38,599 [main] DEBUG org.apache.ibatis.logging.LogFactory [LogFactory.java : 135] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-11-14 18:16:38,675 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,675 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,675 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,675 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,737 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,737 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,738 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,738 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:16:38,755 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:16:38,974 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 587003819.
+2019-11-14 18:16:38,974 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@22fcf7ab]
+2019-11-14 18:16:38,977 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from loginCase where id=? 
+2019-11-14 18:16:38,996 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==> Parameters: 2(Integer)
+2019-11-14 18:16:39,006 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==    Columns: id, username, password, apiparams, expect
+2019-11-14 18:16:39,007 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==        Row: 2, hbz, zaq1234, {"params":{"loginName":"hbz","password":"zaq1234"},"readonly":true}, null
+2019-11-14 18:16:39,008 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:16:39,189 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:16:39,195 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator [DefaultClientConnectionOperator.java : 174] - Connecting to weixt.spacetech.com.cn:8090
+2019-11-14 18:16:39,206 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:16:39,213 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:16:39,213 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:16:39,213 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:16:39,213 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:16:39,214 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:16:39,214 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /weixt/api/user_user_login HTTP/1.1[\r][\n]"
+2019-11-14 18:16:39,214 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 121[\r][\n]"
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 121
+2019-11-14 18:16:39,215 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:16:39,216 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:16:39,216 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:16:39,216 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A%7B%22loginName%22%3A%22hbz%22%2C%22password%22%3A%22zaq1234%22%7D%2C%22readonly%22%3Atrue%7D"
+2019-11-14 18:16:39,287 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:16:39,288 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:16:39,288 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:16:39 GMT[\r][\n]"
+2019-11-14 18:16:39,288 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: text/plain;charset=utf-8[\r][\n]"
+2019-11-14 18:16:39,288 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 1006[\r][\n]"
+2019-11-14 18:16:39,288 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:16:39,289 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:16:39,289 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:16:39,289 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:16:39,289 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:16:39,289 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:16:39,289 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:16:39 GMT
+2019-11-14 18:16:39,290 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: text/plain;charset=utf-8
+2019-11-14 18:16:39,290 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 1006
+2019-11-14 18:16:39,290 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:16:39,290 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:16:39,292 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:16:39,297 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"user_login","data":{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusList":[{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusid":196,"city":"330000330100","countydown":"","id":196,"period":"KINDERGARTEN","providerid":"","province":"330000","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","type":"SCHOOL","value":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]"}],"campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusSuperAdmin":false,"campusid":196,"idNumber":null,"isRegister":true,"loginName":"hbz","openid":"","orgcode":10008,"phone":"18658833711","portalUrl":"","providerList":[],"roles":"leader","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","token":"0373ec581c66494993845d738a01ba8a","type":"SCHOOL","unionid":"","userIcon":"http://static.weixiaotong.com.cn/d0e8130f8e1567c3fbe12e285b79ce45a56eb88d.jpg","userName":"[0xe9][0xbb][0x84][0xe9][0x82][0xa6][0xe9][0x83][0x91]","userid":140608,"xxType":"1"},"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:16:39,298 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@43f02ef2
+2019-11-14 18:16:39,298 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:16:39,367 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:16:39,403 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 2003463579.
+2019-11-14 18:16:39,403 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@776a6d9b]
+2019-11-14 18:16:39,404 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:16:39,404 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==> Parameters: 8(Integer)
+2019-11-14 18:16:39,406 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:16:39,406 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==        Row: 8, null, {"params": {"campusid": 196,"costTypeid": 191104143562215984,"index": 2},"readonly": true}, 更改排序, , oa_costTypeConfig_changeTypeOrder
+2019-11-14 18:16:39,407 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:16:39,407 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:16:39,419 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 485845532.
+2019-11-14 18:16:39,419 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1cf56a1c]
+2019-11-14 18:16:39,420 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==>  Preparing: select id,is_show,title,orderid from cost_type_config where campusid=? order by update_time desc,orderid asc 
+2019-11-14 18:16:39,420 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==> Parameters: 196(Integer)
+2019-11-14 18:16:39,422 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid
+2019-11-14 18:16:39,422 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201741836534, -1, auto开启配置修改, 1
+2019-11-14 18:16:39,423 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201764242302, -1, auto未开启配置, 2
+2019-11-14 18:16:39,423 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201758279374, 1, auto未配置数据, 3
+2019-11-14 18:16:39,424 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201515786094, -1, auto开启配置修改, 1
+2019-11-14 18:16:39,424 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201523225363, -1, auto未开启配置, 2
+2019-11-14 18:16:39,424 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201561345599, 1, auto未配置数据, 3
+2019-11-14 18:16:39,424 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201395688935, -1, auto开启配置修改, 1
+2019-11-14 18:16:39,425 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201312380721, -1, auto未开启配置, 2
+2019-11-14 18:16:39,425 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201394560025, 1, auto未配置数据, 3
+2019-11-14 18:16:39,425 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200470204645, -1, auto开启配置修改, 1
+2019-11-14 18:16:39,426 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200454088586, -1, auto未开启配置, 2
+2019-11-14 18:16:39,426 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200425673621, 1, auto未配置数据, 3
+2019-11-14 18:16:39,427 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200231175219, -1, auto开启配置修改, 1
+2019-11-14 18:16:39,428 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200286301444, -1, auto未开启配置, 2
+2019-11-14 18:16:39,428 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200270793262, 1, auto未配置数据, 3
+2019-11-14 18:16:39,429 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194654610978, -1, auto开启配置修改, 1
+2019-11-14 18:16:39,430 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200099061249, 1, auto开启配置, 1
+2019-11-14 18:16:39,431 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200082329379, -1, auto未开启配置, 2
+2019-11-14 18:16:39,431 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200090721445, 1, auto未配置数据, 3
+2019-11-14 18:16:39,431 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195943541897, 1, auto开启配置, 1
+2019-11-14 18:16:39,432 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195977887165, -1, auto未开启配置, 2
+2019-11-14 18:16:39,432 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195975171857, 1, auto未配置数据, 3
+2019-11-14 18:16:39,432 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194656470726, -1, auto未开启配置, 2
+2019-11-14 18:16:39,432 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194691657691, 1, auto未配置数据, 3
+2019-11-14 18:16:39,432 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - <==      Total: 24
+2019-11-14 18:16:39,433 [main] INFO  c.w.c.f.Cost_changeTypeOrderTest [Cost_changeTypeOrderTest.java : 37] - 取到的typeid 为：191113201741836534
+2019-11-14 18:16:39,433 [main] INFO  c.w.c.f.Cost_changeTypeOrderTest [Cost_changeTypeOrderTest.java : 39] - 替换后的入参 {"params": {"campusid": 196,"costTypeid": 191113201741836534,"index": 2},"readonly": true}
+2019-11-14 18:16:39,434 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:16:39,434 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:16:39,436 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:16:39,436 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:16:39,436 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:16:39,436 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:16:39,436 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:16:39,437 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_changeTypeOrder HTTP/1.1
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_changeTypeOrder HTTP/1.1[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=0373ec581c66494993845d738a01ba8a[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 144[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:16:39,437 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_changeTypeOrder HTTP/1.1
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=0373ec581c66494993845d738a01ba8a
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 144
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:16:39,438 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A+%7B%22campusid%22%3A+196%2C%22costTypeid%22%3A+191113201741836534%2C%22index%22%3A+2%7D%2C%22readonly%22%3A+true%7D"
+2019-11-14 18:16:39,457 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:16:39,457 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:16:39,457 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:16:39 GMT[\r][\n]"
+2019-11-14 18:16:39,457 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:16:39,457 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 99[\r][\n]"
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:16:39,458 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:16:39 GMT
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 99
+2019-11-14 18:16:39,458 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:16:39,459 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:16:39,459 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:16:39,459 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_changeTypeOrder","data":"[0xe4][0xbf][0x9d][0xe5][0xad][0x98][0xe6][0x88][0x90][0xe5][0x8a][0x9f]","ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:16:39,459 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1787f2a0
+2019-11-14 18:16:39,459 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,060 [main] DEBUG org.apache.ibatis.logging.LogFactory [LogFactory.java : 135] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-11-14 18:33:44,143 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,144 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,144 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,144 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,214 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,214 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,215 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,215 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:33:44,236 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,464 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 202125197.
+2019-11-14 18:33:44,465 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c0c2f8d]
+2019-11-14 18:33:44,467 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from loginCase where id=? 
+2019-11-14 18:33:44,487 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==> Parameters: 2(Integer)
+2019-11-14 18:33:44,497 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==    Columns: id, username, password, apiparams, expect
+2019-11-14 18:33:44,497 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==        Row: 2, hbz, zaq1234, {"params":{"loginName":"hbz","password":"zaq1234"},"readonly":true}, null
+2019-11-14 18:33:44,499 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:33:44,678 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,685 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator [DefaultClientConnectionOperator.java : 174] - Connecting to weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,696 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:33:44,702 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:33:44,702 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:33:44,702 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:33:44,703 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:33:44,703 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:33:44,703 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /weixt/api/user_user_login HTTP/1.1[\r][\n]"
+2019-11-14 18:33:44,703 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 121[\r][\n]"
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:33:44,704 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:33:44,705 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 121
+2019-11-14 18:33:44,705 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,705 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:33:44,705 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:33:44,705 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A%7B%22loginName%22%3A%22hbz%22%2C%22password%22%3A%22zaq1234%22%7D%2C%22readonly%22%3Atrue%7D"
+2019-11-14 18:33:44,774 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:33:44 GMT[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: text/plain;charset=utf-8[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 1006[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:33:44,776 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:33:44,777 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:33:44,777 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:33:44,777 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:33:44,777 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:33:44 GMT
+2019-11-14 18:33:44,777 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: text/plain;charset=utf-8
+2019-11-14 18:33:44,777 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 1006
+2019-11-14 18:33:44,778 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:33:44,778 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:33:44,780 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,785 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"user_login","data":{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusList":[{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusid":196,"city":"330000330100","countydown":"","id":196,"period":"KINDERGARTEN","providerid":"","province":"330000","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","type":"SCHOOL","value":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]"}],"campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusSuperAdmin":false,"campusid":196,"idNumber":null,"isRegister":true,"loginName":"hbz","openid":"","orgcode":10008,"phone":"18658833711","portalUrl":"","providerList":[],"roles":"leader","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","token":"73f9396d3107441da8d1cf8510144d42","type":"SCHOOL","unionid":"","userIcon":"http://static.weixiaotong.com.cn/d0e8130f8e1567c3fbe12e285b79ce45a56eb88d.jpg","userName":"[0xe9][0xbb][0x84][0xe9][0x82][0xa6][0xe9][0x83][0x91]","userid":140608,"xxType":"1"},"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:33:44,785 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2de56eb2
+2019-11-14 18:33:44,786 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,872 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,886 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1020155847.
+2019-11-14 18:33:44,886 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3cce57c7]
+2019-11-14 18:33:44,888 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:33:44,888 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==> Parameters: 3(Integer)
+2019-11-14 18:33:44,889 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:33:44,890 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==        Row: 3, 20, {"params": {"campusid": 196,"costTypeList": [{"costTypeid": 0,"isShow": true,"orderid": 1,"title": "auto开启配置"},{"costTypeid": 0,"isShow": false,"orderid": 2,"title": "auto未开启配置"},{"costTypeid":0,"isShow": true,"orderid": 3,"title": "auto未配置数据"}]},"readonly": true}, 保存类型配置, 200, oa_costTypeConfig_save
+2019-11-14 18:33:44,890 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:33:44,891 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,891 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:33:44,893 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:33:44,893 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:33:44,893 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:33:44,893 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:33:44,894 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:33:44,894 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:33:44,894 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_save HTTP/1.1[\r][\n]"
+2019-11-14 18:33:44,894 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:33:44,894 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=73f9396d3107441da8d1cf8510144d42[\r][\n]"
+2019-11-14 18:33:44,894 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 544[\r][\n]"
+2019-11-14 18:33:44,894 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=73f9396d3107441da8d1cf8510144d42
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 544
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:33:44,895 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:33:44,896 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A+%7B%22campusid%22%3A+196%2C%22costTypeList%22%3A+%5B%7B%22costTypeid%22%3A+0%2C%22isShow%22%3A+true%2C%22orderid%22%3A+1%2C%22title%22%3A+%22auto%E5%BC%80%E5%90%AF%E9%85%8D%E7%BD%AE%22%7D%2C%7B%22costTypeid%22%3A+0%2C%22isShow%22%3A+false%2C%22orderid%22%3A+2%2C%22title%22%3A+%22auto%E6%9C%AA%E5%BC%80%E5%90%AF%E9%85%8D%E7%BD%AE%22%7D%2C%7B%22costTypeid%22%3A0%2C%22isShow%22%3A+true%2C%22orderid%22%3A+3%2C%22title%22%3A+%22auto%E6%9C%AA%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%22%7D%5D%7D%2C%22readonly%22%3A+true%7D"
+2019-11-14 18:33:44,914 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:33:44,914 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:33:44,914 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:33:44 GMT[\r][\n]"
+2019-11-14 18:33:44,914 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:33:44,914 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 78[\r][\n]"
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:33:44,915 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:33:44 GMT
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 78
+2019-11-14 18:33:44,915 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:33:44,916 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:33:44,916 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,916 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_save","data":null,"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:33:44,916 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3576ddc2
+2019-11-14 18:33:44,916 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,917 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,929 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 122155649.
+2019-11-14 18:33:44,930 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:33:44,931 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:33:44,931 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==> Parameters: 6(Integer)
+2019-11-14 18:33:44,933 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:33:44,933 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==        Row: 6, 20, {"params": {"campusid": 196,"costTypeList": [{"costTypeid": 0,"isShow": false,"orderid":1,"title": "auto开启配置修改"}]},"readonly": true}, 修改配置类型, cost_type_config, oa_costTypeConfig_save
+2019-11-14 18:33:44,933 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:33:44,934 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,944 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1893960929.
+2019-11-14 18:33:44,944 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,945 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==>  Preparing: select id,is_show,title,orderid from cost_type_config where campusid=? order by update_time desc,orderid asc 
+2019-11-14 18:33:44,945 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==> Parameters: 196(Integer)
+2019-11-14 18:33:44,948 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid
+2019-11-14 18:33:44,948 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183397390962, 1, auto开启配置, 1
+2019-11-14 18:33:44,949 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183367090980, -1, auto未开启配置, 2
+2019-11-14 18:33:44,949 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183397501016, 1, auto未配置数据, 3
+2019-11-14 18:33:44,950 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201741836534, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,950 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201764242302, -1, auto未开启配置, 2
+2019-11-14 18:33:44,950 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201758279374, 1, auto未配置数据, 3
+2019-11-14 18:33:44,950 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201515786094, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,951 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201523225363, -1, auto未开启配置, 2
+2019-11-14 18:33:44,951 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201561345599, 1, auto未配置数据, 3
+2019-11-14 18:33:44,951 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201395688935, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,952 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201312380721, -1, auto未开启配置, 2
+2019-11-14 18:33:44,952 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201394560025, 1, auto未配置数据, 3
+2019-11-14 18:33:44,952 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200470204645, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,952 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200454088586, -1, auto未开启配置, 2
+2019-11-14 18:33:44,953 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200425673621, 1, auto未配置数据, 3
+2019-11-14 18:33:44,953 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200231175219, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,954 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200286301444, -1, auto未开启配置, 2
+2019-11-14 18:33:44,954 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200270793262, 1, auto未配置数据, 3
+2019-11-14 18:33:44,954 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194654610978, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,954 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200099061249, 1, auto开启配置, 1
+2019-11-14 18:33:44,955 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200082329379, -1, auto未开启配置, 2
+2019-11-14 18:33:44,955 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200090721445, 1, auto未配置数据, 3
+2019-11-14 18:33:44,955 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195943541897, 1, auto开启配置, 1
+2019-11-14 18:33:44,955 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195977887165, -1, auto未开启配置, 2
+2019-11-14 18:33:44,955 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195975171857, 1, auto未配置数据, 3
+2019-11-14 18:33:44,956 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194656470726, -1, auto未开启配置, 2
+2019-11-14 18:33:44,956 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194691657691, 1, auto未配置数据, 3
+2019-11-14 18:33:44,956 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - <==      Total: 27
+2019-11-14 18:33:44,956 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 122] - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,957 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 90] - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,957 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 344] - Returned connection 1893960929 to pool.
+2019-11-14 18:33:44,957 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 122] - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:33:44,958 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 90] - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:33:44,958 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 344] - Returned connection 122155649 to pool.
+2019-11-14 18:33:44,959 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,959 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:33:44,961 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:33:44,961 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:33:44,961 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:33:44,961 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:33:44,961 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:33:44,961 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:33:44,961 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_save HTTP/1.1[\r][\n]"
+2019-11-14 18:33:44,961 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=73f9396d3107441da8d1cf8510144d42[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 278[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=73f9396d3107441da8d1cf8510144d42
+2019-11-14 18:33:44,962 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 278
+2019-11-14 18:33:44,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:33:44,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:33:44,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:33:44,963 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22readonly%22%3Atrue%2C%22params%22%3A%7B%22costTypeList%22%3A%5B%7B%22costTypeid%22%3A191114183397390962%2C%22orderid%22%3A1%2C%22title%22%3A%22auto%E5%BC%80%E5%90%AF%E9%85%8D%E7%BD%AE%E4%BF%AE%E6%94%B9%22%2C%22isShow%22%3Afalse%7D%5D%2C%22campusid%22%3A196%7D%7D"
+2019-11-14 18:33:44,977 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:33:44,977 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:33:44,977 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:33:44 GMT[\r][\n]"
+2019-11-14 18:33:44,977 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:33:44,977 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 78[\r][\n]"
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:33:44,978 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:33:44 GMT
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:33:44,978 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 78
+2019-11-14 18:33:44,979 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:33:44,979 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:33:44,979 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,979 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_save","data":null,"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:33:44,979 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1e13529a
+2019-11-14 18:33:44,979 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:33:44,980 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,980 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 379] - Checked out connection 1893960929 from pool.
+2019-11-14 18:33:44,981 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,982 [main] DEBUG c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from cost_type_config where id=? 
+2019-11-14 18:33:44,982 [main] DEBUG c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 159] - ==> Parameters: 191114183397390962(BigDecimal)
+2019-11-14 18:33:44,984 [main] TRACE c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid, campusid, creatorid, create_time, updatorid, update_time
+2019-11-14 18:33:44,984 [main] TRACE c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 165] - <==        Row: 191114183397390962, -1, auto开启配置修改, 1, 196, 140608, 2019-11-14 18:33:44.0, 140608, 2019-11-14 18:33:44.0
+2019-11-14 18:33:44,985 [main] DEBUG c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:33:44,986 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 122] - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,987 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 90] - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,987 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 344] - Returned connection 1893960929 to pool.
+2019-11-14 18:33:44,988 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,988 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 379] - Checked out connection 122155649 from pool.
+2019-11-14 18:33:44,988 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:33:44,989 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:33:44,989 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==> Parameters: 4(Integer)
+2019-11-14 18:33:44,991 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:33:44,991 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==        Row: 4, 21,  { "params": {"campusid": 196,"initid": 196}, "readonly": true }, 查询类型, cost_type_config, oa_costTypeConfig_listCostType
+2019-11-14 18:33:44,991 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:33:44,992 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:44,992 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 379] - Checked out connection 1893960929 from pool.
+2019-11-14 18:33:44,992 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:33:44,993 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==>  Preparing: select id,is_show,title,orderid from cost_type_config where campusid=? order by update_time desc,orderid asc 
+2019-11-14 18:33:44,993 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==> Parameters: 196(Integer)
+2019-11-14 18:33:44,995 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid
+2019-11-14 18:33:44,996 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183397390962, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,996 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183367090980, -1, auto未开启配置, 2
+2019-11-14 18:33:44,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183397501016, 1, auto未配置数据, 3
+2019-11-14 18:33:44,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201741836534, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201764242302, -1, auto未开启配置, 2
+2019-11-14 18:33:44,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201758279374, 1, auto未配置数据, 3
+2019-11-14 18:33:44,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201515786094, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201523225363, -1, auto未开启配置, 2
+2019-11-14 18:33:44,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201561345599, 1, auto未配置数据, 3
+2019-11-14 18:33:44,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201395688935, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201312380721, -1, auto未开启配置, 2
+2019-11-14 18:33:44,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201394560025, 1, auto未配置数据, 3
+2019-11-14 18:33:44,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200470204645, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200454088586, -1, auto未开启配置, 2
+2019-11-14 18:33:44,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200425673621, 1, auto未配置数据, 3
+2019-11-14 18:33:44,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200231175219, -1, auto开启配置修改, 1
+2019-11-14 18:33:44,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200286301444, -1, auto未开启配置, 2
+2019-11-14 18:33:44,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200270793262, 1, auto未配置数据, 3
+2019-11-14 18:33:45,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194654610978, -1, auto开启配置修改, 1
+2019-11-14 18:33:45,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200099061249, 1, auto开启配置, 1
+2019-11-14 18:33:45,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200082329379, -1, auto未开启配置, 2
+2019-11-14 18:33:45,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200090721445, 1, auto未配置数据, 3
+2019-11-14 18:33:45,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195943541897, 1, auto开启配置, 1
+2019-11-14 18:33:45,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195977887165, -1, auto未开启配置, 2
+2019-11-14 18:33:45,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195975171857, 1, auto未配置数据, 3
+2019-11-14 18:33:45,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194656470726, -1, auto未开启配置, 2
+2019-11-14 18:33:45,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194691657691, 1, auto未配置数据, 3
+2019-11-14 18:33:45,001 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - <==      Total: 27
+2019-11-14 18:33:45,001 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:33:45,001 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:33:45,003 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:33:45,003 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:33:45,003 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:33:45,003 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:33:45,004 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:33:45,004 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_listCostType HTTP/1.1
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_listCostType HTTP/1.1[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=73f9396d3107441da8d1cf8510144d42[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 110[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:33:45,004 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_listCostType HTTP/1.1
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=73f9396d3107441da8d1cf8510144d42
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 110
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:33:45,005 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=+%7B+%22params%22%3A+%7B%22campusid%22%3A+196%2C%22initid%22%3A+196%7D%2C+%22readonly%22%3A+true+%7D"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:33:45 GMT[\r][\n]"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 2666[\r][\n]"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:33:45,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:33:45,024 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:33:45 GMT
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 2666
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:33:45,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:33:45,024 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:33:45,025 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_listCostType","data":{"balanceJson":{"initBalance":0.2,"initid":123},"listCostTypeJson":[{"costTypeid":"191113194654610978","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201395688935","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113200231175219","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113200099061249","isShow":true,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113201515786094","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113200470204645","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201741836534","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113195943541897","isShow":true,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191114183397390962","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201764242302","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191114183367090980","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113201312380721","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"co"
+2019-11-14 18:33:45,025 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "stTypeid":"191113201523225363","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200454088586","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200286301444","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113194656470726","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200082329379","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113195977887165","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200425673621","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113194691657691","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113195975171857","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113201758279374","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113201561345599","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113200090721445","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113200270793262","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113201394560025","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191114183397501016","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"}]},"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:33:45,025 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@471a9022
+2019-11-14 18:33:45,025 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:33:45,035 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:45,048 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 196732636.
+2019-11-14 18:33:45,048 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@bb9e6dc]
+2019-11-14 18:33:45,049 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:33:45,050 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==> Parameters: 5(Integer)
+2019-11-14 18:33:45,051 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:33:45,052 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==        Row: 5, 22,  {"params": {"campusid": 196,"detailList": [{"money": "111.11", "typeid": "191031164690458265"}], "recordid":null,"remark": "保存当天"}, "readonly": true }, 保存金额, cost_day_detail, oa_costDayRecord_save
+2019-11-14 18:33:45,052 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:33:45,053 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:33:45,066 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1241569743.
+2019-11-14 18:33:45,066 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4a00d9cf]
+2019-11-14 18:33:45,067 [main] DEBUG com.weixt.model.cost_day_record [BaseJdbcLogger.java : 159] - ==>  Preparing: select id from cost_day_record where campusid = 196 and record_date=? 
+2019-11-14 18:33:45,067 [main] DEBUG com.weixt.model.cost_day_record [BaseJdbcLogger.java : 159] - ==> Parameters: 2019-11-14(String)
+2019-11-14 18:33:45,068 [main] DEBUG com.weixt.model.cost_day_record [BaseJdbcLogger.java : 159] - <==      Total: 0
+2019-11-14 18:56:58,078 [main] DEBUG org.apache.ibatis.logging.LogFactory [LogFactory.java : 135] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-11-14 18:56:58,171 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,171 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,171 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,171 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,244 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,244 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,244 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,245 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 316] - PooledDataSource forcefully closed/removed all connections.
+2019-11-14 18:56:58,265 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:58,505 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 202125197.
+2019-11-14 18:56:58,506 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c0c2f8d]
+2019-11-14 18:56:58,508 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from loginCase where id=? 
+2019-11-14 18:56:58,529 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - ==> Parameters: 2(Integer)
+2019-11-14 18:56:58,539 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==    Columns: id, username, password, apiparams, expect
+2019-11-14 18:56:58,539 [main] TRACE com.weixt.model.loginCase [BaseJdbcLogger.java : 165] - <==        Row: 2, hbz, zaq1234, {"params":{"loginName":"hbz","password":"zaq1234"},"readonly":true}, null
+2019-11-14 18:56:58,540 [main] DEBUG com.weixt.model.loginCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:58,722 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:56:58,729 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator [DefaultClientConnectionOperator.java : 174] - Connecting to weixt.spacetech.com.cn:8090
+2019-11-14 18:56:58,740 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:56:58,745 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:56:58,746 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:56:58,746 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:56:58,746 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:56:58,746 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:56:58,746 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /weixt/api/user_user_login HTTP/1.1[\r][\n]"
+2019-11-14 18:56:58,747 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:56:58,747 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 121[\r][\n]"
+2019-11-14 18:56:58,747 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:56:58,747 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /weixt/api/user_user_login HTTP/1.1
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 121
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:56:58,748 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:56:58,749 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A%7B%22loginName%22%3A%22hbz%22%2C%22password%22%3A%22zaq1234%22%7D%2C%22readonly%22%3Atrue%7D"
+2019-11-14 18:56:58,818 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:56:58,820 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:56:58,820 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:56:58 GMT[\r][\n]"
+2019-11-14 18:56:58,820 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: text/plain;charset=utf-8[\r][\n]"
+2019-11-14 18:56:58,820 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 1006[\r][\n]"
+2019-11-14 18:56:58,820 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:56:58,820 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:56:58,821 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:56:58,821 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:56:58,821 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:56:58,821 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:56:58,822 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:56:58 GMT
+2019-11-14 18:56:58,822 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: text/plain;charset=utf-8
+2019-11-14 18:56:58,822 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 1006
+2019-11-14 18:56:58,822 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:56:58,822 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:56:58,824 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:56:58,829 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"user_login","data":{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusList":[{"campusIcon":"http://static.weixiaotong.com.cn/521ba130e150cf1f2714344bbff9c6cae1a0a0d1.png","campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusid":196,"city":"330000330100","countydown":"","id":196,"period":"KINDERGARTEN","providerid":"","province":"330000","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","type":"SCHOOL","value":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]"}],"campusName":"[0xe5][0x85][0x89][0xe6][0xb5][0xb7][0xe5][0xbe][0xae][0xe5][0xb9][0xbc][0xe9][0x80][0x9a][0xe5][0xb1][0x95][0xe7][0xa4][0xba][0xe5][0xb9][0xb3][0xe5][0x8f][0xb0]","campusSuperAdmin":false,"campusid":196,"idNumber":null,"isRegister":true,"loginName":"hbz","openid":"","orgcode":10008,"phone":"18658833711","portalUrl":"","providerList":[],"roles":"leader","simplename":"[0xe8][0x93][0x9d][0xe7][0xb2][0xbe][0xe7][0x81][0xb5][0xe5][0xb9][0xbc][0xe5][0x84][0xbf][0xe5][0x9b][0xad]","token":"528f1d5a3ce04d93acd20ee466443b96","type":"SCHOOL","unionid":"","userIcon":"http://static.weixiaotong.com.cn/d0e8130f8e1567c3fbe12e285b79ce45a56eb88d.jpg","userName":"[0xe9][0xbb][0x84][0xe9][0x82][0xa6][0xe9][0x83][0x91]","userid":140608,"xxType":"1"},"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:56:58,830 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2de56eb2
+2019-11-14 18:56:58,830 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:56:58,918 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:58,932 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1020155847.
+2019-11-14 18:56:58,933 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3cce57c7]
+2019-11-14 18:56:58,933 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:56:58,933 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==> Parameters: 3(Integer)
+2019-11-14 18:56:58,935 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:56:58,935 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==        Row: 3, 20, {"params": {"campusid": 196,"costTypeList": [{"costTypeid": 0,"isShow": true,"orderid": 1,"title": "auto开启配置"},{"costTypeid": 0,"isShow": false,"orderid": 2,"title": "auto未开启配置"},{"costTypeid":0,"isShow": true,"orderid": 3,"title": "auto未配置数据"}]},"readonly": true}, 保存类型配置, 200, oa_costTypeConfig_save
+2019-11-14 18:56:58,936 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:58,936 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:56:58,937 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:56:58,939 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:56:58,939 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:56:58,939 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:56:58,939 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:56:58,939 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:56:58,939 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_save HTTP/1.1[\r][\n]"
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96[\r][\n]"
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 544[\r][\n]"
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:56:58,940 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 544
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:56:58,941 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A+%7B%22campusid%22%3A+196%2C%22costTypeList%22%3A+%5B%7B%22costTypeid%22%3A+0%2C%22isShow%22%3A+true%2C%22orderid%22%3A+1%2C%22title%22%3A+%22auto%E5%BC%80%E5%90%AF%E9%85%8D%E7%BD%AE%22%7D%2C%7B%22costTypeid%22%3A+0%2C%22isShow%22%3A+false%2C%22orderid%22%3A+2%2C%22title%22%3A+%22auto%E6%9C%AA%E5%BC%80%E5%90%AF%E9%85%8D%E7%BD%AE%22%7D%2C%7B%22costTypeid%22%3A0%2C%22isShow%22%3A+true%2C%22orderid%22%3A+3%2C%22title%22%3A+%22auto%E6%9C%AA%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%22%7D%5D%7D%2C%22readonly%22%3A+true%7D"
+2019-11-14 18:56:58,961 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:56:58,961 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:56:58 GMT[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 78[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:56:58,962 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:56:58,962 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:56:58 GMT
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 78
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:56:58,963 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:56:58,963 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_save","data":null,"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:56:58,963 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3576ddc2
+2019-11-14 18:56:58,964 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:56:58,964 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:58,976 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 122155649.
+2019-11-14 18:56:58,976 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:56:58,977 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:56:58,977 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - ==> Parameters: 6(Integer)
+2019-11-14 18:56:58,978 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:56:58,979 [main] TRACE c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 165] - <==        Row: 6, 20, {"params": {"campusid": 196,"costTypeList": [{"costTypeid": 0,"isShow": false,"orderid":1,"title": "auto开启配置修改"}]},"readonly": true}, 修改配置类型, cost_type_config, oa_costTypeConfig_save
+2019-11-14 18:56:58,979 [main] DEBUG c.w.model.cost_type_configSaveCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:58,979 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:58,990 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1893960929.
+2019-11-14 18:56:58,991 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:58,992 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==>  Preparing: select id,is_show,title,orderid from cost_type_config where campusid=? order by update_time desc,orderid asc 
+2019-11-14 18:56:58,992 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - ==> Parameters: 196(Integer)
+2019-11-14 18:56:58,994 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid
+2019-11-14 18:56:58,994 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114185613126170, 1, auto开启配置, 1
+2019-11-14 18:56:58,995 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114185640515680, -1, auto未开启配置, 2
+2019-11-14 18:56:58,995 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114185631736631, 1, auto未配置数据, 3
+2019-11-14 18:56:58,996 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183397390962, -1, auto开启配置修改, 1
+2019-11-14 18:56:58,996 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183367090980, -1, auto未开启配置, 2
+2019-11-14 18:56:58,996 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191114183397501016, 1, auto未配置数据, 3
+2019-11-14 18:56:58,996 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201741836534, -1, auto开启配置修改, 1
+2019-11-14 18:56:58,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201764242302, -1, auto未开启配置, 2
+2019-11-14 18:56:58,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201758279374, 1, auto未配置数据, 3
+2019-11-14 18:56:58,997 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201515786094, -1, auto开启配置修改, 1
+2019-11-14 18:56:58,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201523225363, -1, auto未开启配置, 2
+2019-11-14 18:56:58,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201561345599, 1, auto未配置数据, 3
+2019-11-14 18:56:58,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201395688935, -1, auto开启配置修改, 1
+2019-11-14 18:56:58,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201312380721, -1, auto未开启配置, 2
+2019-11-14 18:56:58,998 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113201394560025, 1, auto未配置数据, 3
+2019-11-14 18:56:58,999 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200470204645, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200454088586, -1, auto未开启配置, 2
+2019-11-14 18:56:59,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200425673621, 1, auto未配置数据, 3
+2019-11-14 18:56:59,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200231175219, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200286301444, -1, auto未开启配置, 2
+2019-11-14 18:56:59,000 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200270793262, 1, auto未配置数据, 3
+2019-11-14 18:56:59,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194654610978, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200099061249, 1, auto开启配置, 1
+2019-11-14 18:56:59,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200082329379, -1, auto未开启配置, 2
+2019-11-14 18:56:59,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113200090721445, 1, auto未配置数据, 3
+2019-11-14 18:56:59,001 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195943541897, 1, auto开启配置, 1
+2019-11-14 18:56:59,002 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195977887165, -1, auto未开启配置, 2
+2019-11-14 18:56:59,002 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113195975171857, 1, auto未配置数据, 3
+2019-11-14 18:56:59,002 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194656470726, -1, auto未开启配置, 2
+2019-11-14 18:56:59,002 [main] TRACE com.weixt.model.cost_type_config [BaseJdbcLogger.java : 165] - <==        Row: 191113194691657691, 1, auto未配置数据, 3
+2019-11-14 18:56:59,002 [main] DEBUG com.weixt.model.cost_type_config [BaseJdbcLogger.java : 159] - <==      Total: 30
+2019-11-14 18:56:59,003 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 122] - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:59,004 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 90] - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:59,004 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 344] - Returned connection 1893960929 to pool.
+2019-11-14 18:56:59,004 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 122] - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:56:59,005 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 90] - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:56:59,005 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 344] - Returned connection 122155649 to pool.
+2019-11-14 18:56:59,005 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:56:59,006 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:56:59,007 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:56:59,007 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:56:59,007 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:56:59,008 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:56:59,008 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:56:59,008 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:56:59,008 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_save HTTP/1.1[\r][\n]"
+2019-11-14 18:56:59,008 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:56:59,008 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96[\r][\n]"
+2019-11-14 18:56:59,008 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 278[\r][\n]"
+2019-11-14 18:56:59,008 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:56:59,008 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_save HTTP/1.1
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 278
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:56:59,009 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22readonly%22%3Atrue%2C%22params%22%3A%7B%22costTypeList%22%3A%5B%7B%22costTypeid%22%3A191114185613126170%2C%22orderid%22%3A1%2C%22title%22%3A%22auto%E5%BC%80%E5%90%AF%E9%85%8D%E7%BD%AE%E4%BF%AE%E6%94%B9%22%2C%22isShow%22%3Afalse%7D%5D%2C%22campusid%22%3A196%7D%7D"
+2019-11-14 18:56:59,022 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:56:59,022 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:56:59,022 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:56:59 GMT[\r][\n]"
+2019-11-14 18:56:59,022 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 78[\r][\n]"
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:56:59,023 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:56:59 GMT
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:56:59,023 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 78
+2019-11-14 18:56:59,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:56:59,024 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:56:59,024 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:56:59,025 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_save","data":null,"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:56:59,025 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1e13529a
+2019-11-14 18:56:59,025 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:56:59,025 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:59,025 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 379] - Checked out connection 1893960929 from pool.
+2019-11-14 18:56:59,026 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:59,026 [main] DEBUG c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from cost_type_config where id=? 
+2019-11-14 18:56:59,027 [main] DEBUG c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 159] - ==> Parameters: 191114185613126170(BigDecimal)
+2019-11-14 18:56:59,029 [main] TRACE c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid, campusid, creatorid, create_time, updatorid, update_time
+2019-11-14 18:56:59,030 [main] TRACE c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 165] - <==        Row: 191114185613126170, -1, auto开启配置修改, 1, 196, 140608, 2019-11-14 18:56:58.0, 140608, 2019-11-14 18:56:59.0
+2019-11-14 18:56:59,030 [main] DEBUG c.w.model.cost_type_config_updated [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:59,031 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 122] - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:59,031 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 90] - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:59,032 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 344] - Returned connection 1893960929 to pool.
+2019-11-14 18:56:59,032 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:59,032 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 379] - Checked out connection 122155649 from pool.
+2019-11-14 18:56:59,032 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@747f281]
+2019-11-14 18:56:59,033 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:56:59,033 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==> Parameters: 4(Integer)
+2019-11-14 18:56:59,035 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:56:59,036 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==        Row: 4, 21,  { "params": {"campusid": 196,"initid": 196}, "readonly": true }, 查询类型, cost_type_list, oa_costTypeConfig_listCostType
+2019-11-14 18:56:59,036 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:59,037 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:59,037 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 379] - Checked out connection 1893960929 from pool.
+2019-11-14 18:56:59,037 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@70e38ce1]
+2019-11-14 18:56:59,038 [main] DEBUG com.weixt.model.cost_type_list [BaseJdbcLogger.java : 159] - ==>  Preparing: select id,is_show,title,orderid from cost_type_config where campusid=? order by orderid 
+2019-11-14 18:56:59,038 [main] DEBUG com.weixt.model.cost_type_list [BaseJdbcLogger.java : 159] - ==> Parameters: 196(Integer)
+2019-11-14 18:56:59,041 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==    Columns: id, is_show, title, orderid
+2019-11-14 18:56:59,041 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113194654610978, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,041 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201395688935, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,042 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201515786094, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,042 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200231175219, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,042 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200099061249, 1, auto开启配置, 1
+2019-11-14 18:56:59,042 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200470204645, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,042 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201741836534, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,042 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113195943541897, 1, auto开启配置, 1
+2019-11-14 18:56:59,043 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191114183397390962, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,043 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191114185613126170, -1, auto开启配置修改, 1
+2019-11-14 18:56:59,043 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201764242302, -1, auto未开启配置, 2
+2019-11-14 18:56:59,043 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191114183367090980, -1, auto未开启配置, 2
+2019-11-14 18:56:59,043 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201312380721, -1, auto未开启配置, 2
+2019-11-14 18:56:59,043 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201523225363, -1, auto未开启配置, 2
+2019-11-14 18:56:59,044 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200454088586, -1, auto未开启配置, 2
+2019-11-14 18:56:59,044 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113194656470726, -1, auto未开启配置, 2
+2019-11-14 18:56:59,044 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113195977887165, -1, auto未开启配置, 2
+2019-11-14 18:56:59,044 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191114185640515680, -1, auto未开启配置, 2
+2019-11-14 18:56:59,044 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200082329379, -1, auto未开启配置, 2
+2019-11-14 18:56:59,044 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200286301444, -1, auto未开启配置, 2
+2019-11-14 18:56:59,045 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200090721445, 1, auto未配置数据, 3
+2019-11-14 18:56:59,045 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191114185631736631, 1, auto未配置数据, 3
+2019-11-14 18:56:59,045 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200425673621, 1, auto未配置数据, 3
+2019-11-14 18:56:59,045 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191114183397501016, 1, auto未配置数据, 3
+2019-11-14 18:56:59,045 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113194691657691, 1, auto未配置数据, 3
+2019-11-14 18:56:59,046 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113195975171857, 1, auto未配置数据, 3
+2019-11-14 18:56:59,046 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201394560025, 1, auto未配置数据, 3
+2019-11-14 18:56:59,046 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113200270793262, 1, auto未配置数据, 3
+2019-11-14 18:56:59,046 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201561345599, 1, auto未配置数据, 3
+2019-11-14 18:56:59,046 [main] TRACE com.weixt.model.cost_type_list [BaseJdbcLogger.java : 165] - <==        Row: 191113201758279374, 1, auto未配置数据, 3
+2019-11-14 18:56:59,046 [main] DEBUG com.weixt.model.cost_type_list [BaseJdbcLogger.java : 159] - <==      Total: 30
+2019-11-14 18:56:59,047 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:56:59,047 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:56:59,048 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:56:59,049 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:56:59,049 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:56:59,049 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:56:59,049 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:56:59,049 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costTypeConfig_listCostType HTTP/1.1
+2019-11-14 18:56:59,049 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costTypeConfig_listCostType HTTP/1.1[\r][\n]"
+2019-11-14 18:56:59,049 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:56:59,049 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96[\r][\n]"
+2019-11-14 18:56:59,049 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 110[\r][\n]"
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costTypeConfig_listCostType HTTP/1.1
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 110
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:56:59,050 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:56:59,051 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:56:59,051 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=+%7B+%22params%22%3A+%7B%22campusid%22%3A+196%2C%22initid%22%3A+196%7D%2C+%22readonly%22%3A+true+%7D"
+2019-11-14 18:56:59,064 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:56:59,064 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:56:59 GMT[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 2947[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:56:59,065 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:56:59,065 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:56:59 GMT
+2019-11-14 18:56:59,066 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:56:59,066 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 2947
+2019-11-14 18:56:59,066 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:56:59,066 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:56:59,066 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:56:59,066 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costTypeConfig_listCostType","data":{"balanceJson":{"initBalance":0.2,"initid":123},"listCostTypeJson":[{"costTypeid":"191113194654610978","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201395688935","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201515786094","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113200231175219","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113200099061249","isShow":true,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200470204645","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201741836534","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113195943541897","isShow":true,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191114183397390962","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191114185613126170","isShow":false,"orderid":1,"title":"auto[0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe4][0xbf][0xae][0xe6][0x94][0xb9]"},{"costTypeid":"191113201764242302","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191114183367090980","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"
+2019-11-14 18:56:59,067 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << ""costTypeid":"191113201312380721","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113201523225363","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200454088586","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113194656470726","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113195977887165","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191114185640515680","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200082329379","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200286301444","isShow":false,"orderid":2,"title":"auto[0xe6][0x9c][0xaa][0xe5][0xbc][0x80][0xe5][0x90][0xaf][0xe9][0x85][0x8d][0xe7][0xbd][0xae]"},{"costTypeid":"191113200090721445","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191114185631736631","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113200425673621","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191114183397501016","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113194691657691","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113195975171857","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113201394560025","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113200270793262","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113201561345599","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"},{"costTypeid":"191113201758279374","isShow":true,"orderid":3,"title":"auto[0xe6][0x9c][0xaa][0xe9][0x85][0x8d][0xe7][0xbd][0xae][0xe6][0x95][0xb0][0xe6][0x8d][0xae]"}]},"ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:56:59,067 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@471a9022
+2019-11-14 18:56:59,067 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely
+2019-11-14 18:56:59,072 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:59,083 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 196732636.
+2019-11-14 18:56:59,083 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@bb9e6dc]
+2019-11-14 18:56:59,084 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==>  Preparing: select * from param where id=? 
+2019-11-14 18:56:59,084 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - ==> Parameters: 5(Integer)
+2019-11-14 18:56:59,086 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==    Columns: id, apiid, apiparams, case, expect, api
+2019-11-14 18:56:59,086 [main] TRACE c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 165] - <==        Row: 5, 22,  {"params": {"campusid": 196,"detailList": [{"money": "111.11", "typeid": "191031164690458265"}], "recordid":null,"remark": "保存当天"}, "readonly": true }, 保存金额, cost_day_detail, oa_costDayRecord_save
+2019-11-14 18:56:59,086 [main] DEBUG c.w.model.cost_type_listCostTypeCase [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:59,090 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 136] - Opening JDBC Connection
+2019-11-14 18:56:59,100 [main] DEBUG o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 387] - Created connection 1241569743.
+2019-11-14 18:56:59,100 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 100] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4a00d9cf]
+2019-11-14 18:56:59,101 [main] DEBUG com.weixt.model.cost_day_record [BaseJdbcLogger.java : 159] - ==>  Preparing: select id from cost_day_record where campusid = 196 and record_date=? 
+2019-11-14 18:56:59,101 [main] DEBUG com.weixt.model.cost_day_record [BaseJdbcLogger.java : 159] - ==> Parameters: 2019-11-14(String)
+2019-11-14 18:56:59,102 [main] TRACE com.weixt.model.cost_day_record [BaseJdbcLogger.java : 165] - <==    Columns: id
+2019-11-14 18:56:59,102 [main] TRACE com.weixt.model.cost_day_record [BaseJdbcLogger.java : 165] - <==        Row: 191114183796931169
+2019-11-14 18:56:59,103 [main] DEBUG com.weixt.model.cost_day_record [BaseJdbcLogger.java : 159] - <==      Total: 1
+2019-11-14 18:56:59,103 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 158] - Get connection for route {}->http://weixt.spacetech.com.cn:8090
+2019-11-14 18:56:59,103 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 432] - Stale connection check
+2019-11-14 18:56:59,105 [main] DEBUG o.a.h.c.protocol.RequestAddCookies [RequestAddCookies.java : 122] - CookieSpec selected: best-match
+2019-11-14 18:56:59,105 [main] DEBUG o.a.h.c.protocol.RequestAuthCache [RequestAuthCache.java : 75] - Auth cache not set in the context
+2019-11-14 18:56:59,105 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication [RequestTargetAuthentication.java : 78] - Target auth state: UNCHALLENGED
+2019-11-14 18:56:59,105 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication [RequestProxyAuthentication.java : 87] - Proxy auth state: UNCHALLENGED
+2019-11-14 18:56:59,105 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 683] - Attempt 1 to execute request
+2019-11-14 18:56:59,106 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 268] - Sending request: POST /api/pc/oa_costDayRecord_save HTTP/1.1
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "POST /api/pc/oa_costDayRecord_save HTTP/1.1[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-type: application/x-www-form-urlencoded[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Content-Length: 284[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Host: weixt.spacetech.com.cn:8090[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2019-11-14 18:56:59,106 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  >> "[\r][\n]"
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 272] - >> POST /api/pc/oa_costDayRecord_save HTTP/1.1
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-type: application/x-www-form-urlencoded
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Cookie: JSSSID_COOKIE=528f1d5a3ce04d93acd20ee466443b96
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Content-Length: 284
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Host: weixt.spacetech.com.cn:8090
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> Connection: Keep-Alive
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 275] - >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2019-11-14 18:56:59,107 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  >> "apiparams=%7B%22params%22%3A%7B%22recordid%22%3A191114183796931169%2C%22campusid%22%3A196%2C%22detailList%22%3A%5B%7B%22money%22%3A%22111.11%22%2C%22typeid%22%3A%22191031164690458265%22%7D%5D%2C%22remark%22%3A%22%E4%BF%9D%E5%AD%98%E5%BD%93%E5%A4%A9%22%7D%2C+%22readonly%22%3A+true+%7D"
+2019-11-14 18:56:59,150 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Server: Tengine/2.2.0[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Date: Thu, 14 Nov 2019 10:56:59 GMT[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Content-Length: 87[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Connection: keep-alive[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.wire [Wire.java : 72] -  << "[\r][\n]"
+2019-11-14 18:56:59,151 [main] DEBUG o.a.h.i.conn.DefaultClientConnection [DefaultClientConnection.java : 253] - Receiving response: HTTP/1.1 200 OK
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 256] - << HTTP/1.1 200 OK
+2019-11-14 18:56:59,151 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Server: Tengine/2.2.0
+2019-11-14 18:56:59,152 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Date: Thu, 14 Nov 2019 10:56:59 GMT
+2019-11-14 18:56:59,152 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Type: application/json;charset=UTF-8
+2019-11-14 18:56:59,152 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Content-Length: 87
+2019-11-14 18:56:59,152 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Connection: keep-alive
+2019-11-14 18:56:59,152 [main] DEBUG org.apache.http.headers [DefaultClientConnection.java : 259] - << Access-Control-Allow-Origin: *
+2019-11-14 18:56:59,152 [main] DEBUG o.a.h.impl.client.DefaultHttpClient [DefaultRequestDirector.java : 510] - Connection can be kept alive indefinitely
+2019-11-14 18:56:59,152 [main] DEBUG org.apache.http.wire [Wire.java : 86] -  << "{"api":"costDayRecord_save","data":"[0xe6][0x9b][0xb4][0xe6][0x96][0xb0][0xe6][0x88][0x90][0xe5][0x8a][0x9f]","ret":{"code":"200","msg":""},"v":""}"
+2019-11-14 18:56:59,152 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 196] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@e3c0e40
+2019-11-14 18:56:59,152 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager [BasicClientConnectionManager.java : 221] - Connection can be kept alive indefinitely

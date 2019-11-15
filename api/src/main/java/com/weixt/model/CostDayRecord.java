@@ -1,8 +1,11 @@
 package com.weixt.model;
 
+import lombok.Data;
+
 import java.math.BigInteger;
 
 
+@Data
 public class CostDayRecord {
 
     private BigInteger id;

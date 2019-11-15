@@ -24,6 +24,8 @@ import java.util.List;
 public class cost_type_configSaveTest {
 
 
+
+
     @Test(dependsOnGroups = "loginTrue196",description = "新增配置项")
     public void configSave() throws IOException {
 
@@ -50,30 +52,40 @@ public class cost_type_configSaveTest {
         GetParam getParam = sqlSession.selectOne("cost_type_configSaveCase",6);
         List<CostTypeConfig> costTypeConfigList =sqlSession1.selectList(getParam.getExpected(),196);
 
+        DatabaseUtil.closeSession(sqlSession1);
+        DatabaseUtil.closeSession(sqlSession);
         JSONObject jsonObject = JSONObject.parseObject(getParam.getApiparams());
         JSONObject jsonObject1 = JSONObject.parseObject(jsonObject.getString("params"));
         JSONArray jsonArray = JSONArray.parseArray(jsonObject1.getString("costTypeList"));
         jsonArray.getJSONObject(0).put("costTypeid",costTypeConfigList.get(0).getId());
-        jsonArray.getJSONObject(1).put("costTypeid",costTypeConfigList.get(1).getId());
-        System.out.println(costTypeConfigList.get(0).getId() +"   "  +costTypeConfigList.get(1).getId());
+        jsonObject1.put("costTypeList",jsonArray);
+        jsonObject.put("params",jsonObject1);
+        System.out.println(costTypeConfigList.get(0).getId() +"   "+jsonObject.toString()+" "+jsonArray.toString());
 
-        String result = getUpdateResult(getParam,jsonObject.toString());
-        JSONObject jsonObject2 = JSONObject.parseObject("result");
+        String result = getResult(getParam,jsonObject.toString());
+        JSONObject jsonObject2 = JSONObject.parseObject(result);
         JSONObject jsonObject3 = JSONObject.parseObject(jsonObject2.getString("ret"));
-        Assert.assertEquals(jsonObject3.getString("code"),200);
+        Assert.assertEquals(jsonObject3.getString("code"),"200");
 
-//        for(int i = 0;i<jsonArray.size();i++){
-//            List<CostTypeConfig> costTypeConfigList1 =sqlSession1.selectList(getParam.getExpected(),196);
-//            Assert.assertEquals(costTypeConfigList1.get(i).toString(),jsonArray.get(i).toString());
-//
-//        }
+
+        SqlSession sqlSession2 = DatabaseUtil.getTestSession();
+        CostTypeConfig costTypeConfig =sqlSession2.selectOne("cost_type_config_updated",costTypeConfigList.get(0).getId());
+        DatabaseUtil.closeSession(sqlSession2);
+        System.out.println(costTypeConfig.toString()+"  "+jsonArray.getJSONObject(0).getString("title"));
+        Assert.assertEquals(costTypeConfig.getTitle(),jsonArray.getJSONObject(0).getString("title"));
+
+        Assert.assertEquals(costTypeConfig.getIs_show(),-1);
+        System.out.println("数据更新成功！");
+
+
+
 
 
 
 
     }
 
-    private String getUpdateResult(GetParam getParam,String params) throws IOException {
+    private String getResult(GetParam getParam,String params) throws IOException {
 
         HttpPost post = new HttpPost(ConfigFile.getUrlNew(getParam.getApi()));
         List<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>();

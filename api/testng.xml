@@ -17,25 +17,32 @@
                 <methods>
                     <include name="versionList"></include>
                 </methods>
-            </class> -->
+            </class>-->
             <class name="com.weixt.cases.cost_type_configSaveTest">
                 <methods>
-                    <exclude name="configSave"></exclude>
+                    <include name="configSave"></include>
                     <include name="configUpdate"></include>
                 </methods>
             </class>
+            <class name="com.weixt.cases.foodfee.Cost_changeTypeOrderTest">
+                <methods>
+                    <exclude name="changeTypeOrderTest"></exclude>
 
-           <!-- <class name="com.weixt.cases.Cost_type_listCostTypeTest">
+                </methods>
+
+            </class>
+
+           <class name="com.weixt.cases.Cost_type_listCostTypeTest">
                 <methods>
                     <exclude name="cost_type_listCostTypeTest"></exclude>
 
                 </methods>
-            </class>-->
-            <!--<class name="com.weixt.cases.Cost_DayDetailSaveTest">
+            </class>
+            <class name="com.weixt.cases.Cost_DayDetailSaveTest">
                 <methods>
                     <include name="DayDetailSaveTest"></include>
                 </methods>
-            </class>-->
+            </class>
 
 
 
